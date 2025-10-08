@@ -43,6 +43,7 @@ def main():
     """Command line entry point."""
     parser = argparse.ArgumentParser(description="KYCIntegration - A powerful utility")
     parser.add_argument('-v', '--verbose', action='store_true', help='Enable verbose logging')
+    parser.add_argument('-h', '--help', action='help', help='Show this help message and exit')
     args = parser.parse_args()
     
     app = KYCIntegration(verbose=args.verbose)
